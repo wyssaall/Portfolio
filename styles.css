@@ -1,0 +1,317 @@
+
+
+*{
+font-family: 'Roboto', sans-serif;
+color: rgb(255, 255, 255);
+background-color: rgb(71, 5, 116);
+}
+
+.navigation{
+    text-align:right; /* the nav elements to right*/
+    font-size: 20px ;
+
+}
+nav{
+    background-color: rgb(71, 5, 116);
+    position: fixed; /* so it stays fix on top*/
+    display: inline;
+    top: 0; /* to stick on top*/
+    left: 0; /* left and right to take full width of tha page*/
+    right: 0;
+    z-index: 1000; /* Ensures the nav stays on top of other content */
+    padding: 20px 40px;  /*20 for top and bottom, 40 for left and right */
+    text-align: right; /* Keeps the nav elements to the right */
+    
+}
+nav a{
+    
+    text-decoration: none; /* to remove the underline*/
+   /* background-color: rgb(255, 218, 234) ;*/
+   margin-right: 50px;
+    transition: color 0.2s ease;  /* to change to color on hover*/
+
+}
+a:hover {
+    color:rgb(231, 210, 245);
+    text-shadow: 0 0 10px rgb(231, 210, 245), 0 0 20px rgb(231, 210, 245); /* Adds the shine effect */
+
+}
+
+#home p{
+    font-size: 35px;
+    color: rgb(179, 179, 179);;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 3px;
+    margin-top: 80px;
+
+}
+.homesect{
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    gap: 350px; /* Adds space between the text and the image */
+}
+.homesect h4{
+    font-family: "Dancing script", cursives;
+    font-size: 80px;
+    margin-top: 0px;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    margin-left: 30px;
+}
+
+.homesect img{
+    float: left; /* Moves the image to the left */
+    border-radius: 3%; /* Makes it fully round */
+    font-size: 80px;
+    margin-bottom: 20px;
+    width: 300px; /* Adjust size as needed */
+    height: 340px; /* Ensure it's a perfect circle */
+    margin-left: 50px ;
+    border-radius: 50%;
+}
+h1{ /* for all h1 elements*/
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: capitalize; /* to make the initials capital*/
+    font-style: "Dancing script", cursives;
+    text-align: center;
+
+}
+
+.about p{
+    background-color: rgb(38, 0, 63);
+    text-align: center;
+    padding: 20px;
+    color: white; /* Ensure text is white */
+    font-size: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), 
+    inset -3px -3px 5px rgba(255, 255, 255, 0.2); /* the box looks 3D*/
+    margin-bottom: 40px; 
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.titre p{
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.proj {
+   
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Add space inside the box */
+    margin: 20px auto; /* Center the div and add spacing */
+    width: 80%; 
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), 
+                inset -3px -3px 5px rgba(255, 255, 255, 0.2); /* 3D effect */
+    display: block; 
+    align-items: center; 
+    text-align: center;
+    gap: 20px; /* Space between elements */
+    color: white; /* Ensure text is readable */
+}
+
+
+.proj img {
+    width: 350px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+#mobile{
+    height: 300px;
+    width: 150px;
+}
+
+
+.proj span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proj h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.proj h4 {
+    font-size: 18px;
+    margin-top: 10px;
+ 
+}
+
+.proj p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skill{
+    width: 80%; /* Set width to 80% of the page */
+    margin: auto; /* Center the section */
+    padding: 20px;
+    
+}
+.skill h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white; /* White text for readability */
+}
+
+
+.skill label {
+    display: block; /* Make label appear on top of the progress bar */
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+progress {
+    width: 100%; /* Full width of the container */
+    height: 8px; /* Small height for a clean look */
+    border-radius: 5px; /* Rounded edges */
+    -webkit-appearance: none; /* Remove default browser styling */
+    appearance: none;
+   
+}
+
+/* Style the progress bar background */
+progress::-webkit-progress-bar {
+    background: rgba(255, 255, 255, 0.2); /* Light background for contrast */
+    border-radius: 5px;
+   
+}
+
+/* Style the progress bar fill */
+progress::-webkit-progress-value {
+    background: rgb(255, 171, 203); /* Main color for the filled part */
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+  
+}
+
+
+
+/* General styles for the section */
+#contact {
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    margin: auto;
+}
+
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Labels */
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input fields */
+form input, 
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder text */
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus effect */
+form input:focus, 
+form textarea:focus {
+    border-color: rgb(255, 171, 203);
+    outline: none;
+}
+
+form button {
+    background-color: rgb(255, 171, 203);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: white;
+    color: rgb(38, 0, 63);
+    box-shadow: 0px 0px 10px rgba(255, 171, 203, 0.8);
+}
+
+
+
+#footer {
+    background-color: rgb(38, 0, 63); 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; /* Padding for spacing */
+    position: relative; /* Keeps it in place */
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#footer div {
+    margin-top: 10px;
+}
+
+#footer a {
+    display: inline-block;
+    margin: 0 10px; /* Spacing between icons */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+#footer a:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+#footer img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+}
+
